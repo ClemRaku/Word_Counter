@@ -5,4 +5,5 @@ def index(request):
 # Create your views here.
 
 def counter(request):
+    text = request.GET['words']#collecting the variable words from the index html
     return render(request, 'counter.html')
